@@ -1,0 +1,566 @@
+html,body,ol,ul,li{
+  margin:0;
+  padding: 0;
+  font-family: "Helvetica","Tahoma","Arial","PingFang SC","Microsoft JhengHei","SimSun","sans-serif";
+}
+
+@font-face {
+  font-family: 'iconfont';  /* project id 323969 */
+  src: url('//at.alicdn.com/t/font_cv5l8aeuwc9xusor.eot');
+  src: url('//at.alicdn.com/t/font_cv5l8aeuwc9xusor.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_cv5l8aeuwc9xusor.woff') format('woff'),
+  url('//at.alicdn.com/t/font_cv5l8aeuwc9xusor.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_cv5l8aeuwc9xusor.svg#iconfont') format('svg');
+}
+
+.icon{
+  font-family:"iconfont";
+  font-size:60px;
+  color:#fff;
+}
+
+.layout{
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.clearfix:after {
+  content:"";
+  display: block;
+  clear: both;
+}
+
+ul,ol{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color:#000;
+  font-weight: 700;
+}
+
+.header{
+  position:fixed;
+  width:100%;
+  z-index: 2;
+  background: #fff;
+  box-shadow: 0 1px 8px #ccc;
+}
+
+.header .logo{
+  float:left;
+  padding:10px;
+}
+
+.header .logo img{
+  width:120px;
+  height:40px;
+}
+
+.header .nav ul{
+  float:right;
+}
+
+.header .nav li{
+  float:left;
+  padding:20px 10px;
+} 
+
+.header .nav li a:hover{
+  color: #fed136; 
+}
+
+/*轮播*/
+.carousel{
+  position:relative;
+  top:25px;
+  width:100%;
+  height:532px;
+  overflow:hidden;
+}
+
+.carousel .img-ct{
+  position:absolute;
+}
+
+.carousel .img-ct li{
+  float:left;
+}
+
+.carousel .img-ct img{
+  width:1520px;
+  height:532px;
+}
+
+.carousel .btn{
+  position:absolute;
+  top:50%;
+  margin-top:-25px;
+  display:inline-block;
+  width:25px;
+  height:50px;
+  border-radius:50px;
+  border:2px solid #fff;
+  z-index:1;
+  color:#fff;
+  line-height:50px;
+  text-align:center;
+  text-decoration:none;
+  opacity:0.5
+}
+
+.carousel .btn:hover{
+  opacity:1;
+}
+
+.carousel .btn-pre{
+  left:10px
+}
+
+.carousel .btn-next{
+  right:10px
+}
+
+
+.carousel .bullet{
+  position:absolute;
+  display:flex;
+  justify-content:center;
+  width:200px;
+  bottom:10px;
+  left:50%;
+  margin-left:-100px;
+  z-index:1;
+  cursor:pointer;
+}
+
+.carousel .bullet>li{
+  width:30px;
+  height:6px;
+  border:1px solid #fff;
+  margin:0 3px;
+  border-radius:5px;
+}
+
+.carousel .bullet>li.active{
+  background:#ccc;
+}
+
+.slider-box{
+  position:relative;
+  padding-top: 40px;
+}
+
+.slider-txt{
+  position:absolute;
+  font-size:32px;
+  text-align: center;
+  width:300px;
+  height:300px;
+  top:50%;
+  left:50%;
+  margin-left:-150px;
+  margin-top:-150px;
+  color:#fff;
+  /*z-index: 1;*/
+
+}
+
+
+
+.content{
+  margin-bottom: 100px;
+}
+
+.center-h1-p>h1{
+  text-align:center;
+  font-size: 40px;
+  padding-top:210px;
+  margin:0;
+}
+
+.center-h1-p>p{
+  text-align:center;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.column-group{
+  width: 33.33333333%;
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  margin-bottom:40px;
+} 
+
+
+
+.flex-group{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+
+.column-group p:first-child{
+  background:#fed136;
+  width:100px;
+  height:100px;
+  border-radius:50%;
+}
+
+.column-group p:last-child{
+  text-align:center;
+  color:#777;
+  font-size:14px;
+  line-height:1.75;
+  
+}
+
+.column-group span{
+  display:inline-block;
+  padding:14px 20px;
+}
+
+.main{
+  background: #f1f1f1;
+  padding-bottom:200px; 
+}
+
+.exp-item{
+  position: relative;
+  width:360px;
+  height: 350px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.exp-item img{
+  width:360px;
+  height: 260px;
+}
+
+.exp-item .icon{
+  padding:34px 0;
+  text-align: center;
+}
+
+.center-h4-p{
+  text-align:center;
+  width:310px;
+  padding:25px;
+}
+
+.center-h4-p>p, 
+.center-h4-p>h4{
+  margin: 0;
+}
+
+
+.exp-img{
+  position: absolute;
+  width:360px;
+  height: 260px;
+  background:#fec503;
+  opacity: 0;
+  z-index: 1;
+}
+
+.exp-img:hover{
+  opacity: 0.8;
+}
+
+/* 瀑布流布局 */
+.wrap{
+  width:1220px;
+  margin:0 auto;
+  margin-bottom: 100px;
+}
+
+#pic-ct{
+  position:relative;
+}
+
+#pic-ct .item{
+  border:1px solid #ccc;
+  position:absolute;
+  padding:0 0 10px 0;
+  width:280px;
+  margin:10px;
+  background:#fff;
+  transition:all 1s;
+}
+
+#pic-ct .item img{
+  margin:10px;
+  width:260px;
+}
+
+#pic-ct .item .header{
+  height:25px;
+  margin: 0 12px;
+  border-bottom:1px solid #ccc;
+}
+
+#pic-ct .desp{
+  font-size:12px;
+  line-height:1.8;
+  margin:10px 15px 0;
+  color:#777371;
+}
+
+.load{
+  position:absolute;
+  left:50%;
+  background: #fed136;
+  border-radius: 3px;
+  margin-left: -100px;
+  margin-top:50px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.load p{
+  display:inline-block;
+  padding:10px 60px;
+  color:#fff;
+  font-size: 18px;
+}
+
+.load:hover{
+  opacity: 1;
+}
+
+.hide{
+  display:none;
+}
+
+
+
+.about{
+  margin-bottom:350px;
+}
+
+
+.timeline{
+  margin-top:60px;
+}
+
+.timeline img{
+  width:156px;
+  height:156px;
+  border:7px solid #f1f1f1;
+  border-radius:50%;
+}
+
+.timeline>li{
+  text-align:center;
+  position:relative;
+  padding:0 0 125px 0;
+}
+
+.timeline> li > .summary{
+  position:absolute;
+  right:50%;
+  margin-right:85px;
+  text-align:right;
+  top:0;
+  width:30em;
+}
+
+.timeline> li:nth-child(even) > .summary{
+  left:50%;
+  text-align:left;
+  margin-left:85px;
+}
+
+.timeline>li::after{
+  content:"";
+  display:block;
+  position:absolute;
+  left:50%;
+  top:0;
+  border-left:2px solid #f1f1f1;
+  margin-left:-1px;
+  height:100%;
+  z-index:-2;
+}
+
+.timeline>li:last-child{
+  padding-bottom:0;
+  text-align:center;
+}
+
+.timeline-img{
+  position:absolute;
+  left:50%;
+  margin-left:-85px;
+  width:156px;
+  height:156px;
+  background:#fec503;
+  border-radius:50%;
+  border:7px solid #f1f1f1;
+}
+
+.timeline-img> p{
+  display:block;
+  font-size:18px;
+  line-height:26px;
+  font-weight:700;
+  color:#fff;
+  margin-top:40px;
+} 
+
+.team{
+  background:#f7f7f7;
+  padding-bottom: 200px;
+}
+
+.team .flex-group{
+  padding-top:90px;
+}
+
+.team-mb-img>img{
+  border-radius:50%;
+  border:7px solid #fff;
+}
+
+.team-nb-intro>h4, 
+.team-nb-intro>p{
+  text-align:center;
+}
+
+.team-icon ul{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.team-icon .icon{
+  font-size:40px;
+  color:#000;
+  margin:5px;
+}
+
+.team-icon .icon:hover{
+  color:#fec503;
+  border-radius:50%;
+  transition:all .3s;
+}
+
+.team>p{
+  width:750px;
+  color:#777;
+  line-height:1.75;
+  padding:20px 0;
+  text-align:center;
+}
+
+.service-item{
+  display:flex;
+  padding:50px;
+  justify-content:space-between;
+}
+
+.contact{
+  background:url("../images/message.jpg") center center no-repeat;
+  height:600px; 
+}
+
+.contact .center-h1-p>h1{
+  padding-top: 80px;
+}
+
+.contact-title{
+  margin:0;
+  padding-top:50px;
+}
+
+.contact-form {
+  position: relative;
+}
+
+.formleft {
+  float: left;
+  width: 45%;
+}
+
+.formright {
+  float: right;
+  width: 48%;
+}
+
+.inputcontrol {
+  margin-bottom: 25px;
+}
+
+.inputcontrol input,
+.textareacontrol textarea{
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 20px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+}
+
+.contact .sendmessage{
+  position:absolute;
+  padding:20px 40px;
+  outline:none;
+  border-color:transparent;
+  background: #fed136;
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: 0.8;
+  bottom:-60px;
+  margin-left:-40px;
+  font-weight: 700;
+  color:#fff;
+  font-size: 16px;
+}
+
+.contact .sendmessage:hover{
+  opacity: 1;
+}
+
+.flex-footer{
+  margin:20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+
+.copyright{
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;!importent
+}
+
+
+.friendlink a{
+  color:#fec503;
+}
+
+.friendlink a:hover{
+  text-decoration:underline;
+}
+
+#gotop{
+  position: fixed;
+  right: 20px; 
+  bottom: 20px; 
+  display: none; 
+  width: 32px; 
+  border-radius: 6px; 
+  padding: 10px;
+  background: #fed136;
+  cursor: pointer;
+  opacity:0.7;
+  transition:all .3s;
+}
+
+#gotop:hover{
+  opacity: 1;
+}
